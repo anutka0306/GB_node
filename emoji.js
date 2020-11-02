@@ -12,4 +12,4 @@ emoji.hasEmoji('🍕') // Validate if this library knows an emoji like `🍕`
 emoji.hasEmoji('pizza') // Validate if this library knowns a emoji with the name `pizza`
 emoji.strip('⚠️ 〰️ 〰️ low disk space') // Strips the string from emoji's, in this case returns: "low disk space".
 emoji.replace('⚠️ 〰️ 〰️ low disk space', (emoji) => `${emoji.key}:`) // Replace emoji's by callback method: "warning: low disk space"
-console.log("I "+emoji.get('heart') +emoji.get('heart') +" to drink "+emoji.get('coffee')+emoji.get('coffee')+emoji.get('coffee')+" so much");
+console.log("I "+emoji.get('heart') +emoji.get('heart') +" to drink "+emoji.get('coffee')+emoji.get('coffee')+emoji.get('coffee')+emoji.get('coffee')+" so much");
