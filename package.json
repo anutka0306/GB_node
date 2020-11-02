@@ -1,0 +1,22 @@
+{
+  "name": "gb_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[A\u001b[A\u001b[A\u001b[A\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C"
+  },
+  "author": "Anna Kotelnikova",
+  "license": "ISC",
+  "dependencies": {
+    "ansi": "^0.3.1",
+    "lucky": "^1.1.0",
+    "node-emoji": "^1.10.0",
+    "pizzicato": "^0.6.4",
+    "voice": "0.0.0"
+  }
+}
