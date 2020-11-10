@@ -1,7 +1,11 @@
 html
     head
         title #{title}
-        script
-            include ../../test.js
     body
-        h1 #{message}
+        h1 Fresh News
+        div(id='news_wrap')
+            ul
+            -
+              var list = message
+            each item in list
+              li= item
