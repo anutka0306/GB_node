@@ -1,0 +1,15 @@
+html
+  head
+    title #{title}
+  body
+    h1 #{message}
+    form(method = 'post', action = '/news')
+        input(type='hidden', name='source' value='rbc.ru')
+        input(type='number', name='qty' placeholder='Сколько новостей показать')
+        input(type='submit', value='RBK NEWS')
+    div(class="news-wrapper")
+        ul
+        - if(news)
+            each item in news
+                li #{item}
+
