@@ -1,0 +1,44 @@
+<h1>Задачи</h1>
+    <div style="display:flex;">
+        <div style="padding:20px;">
+            <h2>Поставленные мной</h2>
+            <ol>
+                {{#each tasks}}
+                <li>
+                    {{#if this.completed }}+{{else}}-{{/if}} {{ this.description }}
+                    <form method="POST" action="/task/{{ this.id }}/delete/">
+                        <button type="submit">Удалить</button>
+                    </form></li>
+                    <form method="POST" action="/task/{{ this.id }}/complete/">
+                        <input type="hidden" name="completed" value="{{ not this.completed }}">
+                        <button type="submit">Завершить</button>
+                    </form></li>
+                {{/each}}
+                <form method="POST" action="/task/">
+                    <input type="hidden", name="owner" value="{{ userid }}">
+                    <input type="text" name="description">
+                    <input type="text" name="performer">
+                    <button type="submit">Добавить задачу</button>
+                </form>
+            </ol>
+        </div>
+
+        <div style="padding:20px;">
+            <h2>Назначенные мне</h2>
+                <ol>
+                    {{#each tasksForMe}}
+                    <li>
+                        {{#if this.completed }}+{{else}}-{{/if}} {{ this.description }}
+                        </li>
+                        <form method="POST" action="/task/{{ this.id }}/complete/">
+                            <input type="hidden" name="completed" value="{{ not this.completed }}">
+                            <button type="submit">Завершить</button>
+                        </form></li>
+                    {{/each}}
+                </ol>
+            </div>
+    </div>
+
+    <form method="POST" action="/auth/logout/">
+     <button type="submit">Выйти</button>
+    </form>
